@@ -186,3 +186,9 @@ jobs:
           else
             echo "❌ Trivy scan results not found"
           fi
+
+services:
+  redis:
+    image: redis:7
+    ports:
+    - 6379:6379
