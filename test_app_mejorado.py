@@ -75,12 +75,12 @@ class TestFlaskApp(unittest.TestCase):
         data = response.get_json()
         self.assertEqual(data['result'], 0)
 
-    def test_bad_function_directly(self):
+    def test_calculate_result_directly(self):
         """Test the badFunction directly for complete coverage"""
         # Test all branches of badFunction
-        self.assertEqual(badFunction(15, 20), 300)  # x > 10, y > 10
-        self.assertEqual(badFunction(15, 5), 20)    # x > 10, y <= 10
-        self.assertEqual(badFunction(5, 20), 0)     # x <= 10
+        self.assertEqual(calculate_result(15, 20), 300)  # x > 10, y > 10
+        self.assertEqual(calculate_result(15, 5), 20)    # x > 10, y <= 10
+        self.assertEqual(calculate_result(5, 20), 0)     # x <= 10
 
 if __name__ == '__main__':
     unittest.main()
