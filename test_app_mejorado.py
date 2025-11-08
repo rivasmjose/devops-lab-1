@@ -3,7 +3,7 @@ Comprehensive tests for the Flask application with coverage analysis
 """
 import unittest
 import json
-from app import app, badFunction
+from app import app, calculate_result
 
 class TestFlaskApp(unittest.TestCase):
     """Test cases for Flask application"""
